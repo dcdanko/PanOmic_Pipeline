@@ -3,7 +3,7 @@
 rule quantify_taxa_megan:
     input:
         dmnd_m8 = config['align_reads_to_nr']['m8'],
-        acc2tax = config['quantify_taxa_megan']['acc2tax']
+        acc2taxa = config['quantify_taxa_megan']['acc2taxa']
     output:
         taxa = config['quantify_taxa_megan']['taxa']
     params:
@@ -14,9 +14,9 @@ rule quantify_taxa_megan:
     run:
         cmd = ('{params.blast2lca} '
                '-i {input.dmnd_m8} '
-               '-f DAA '
+               '-f BlastTab '
                '-m BlastX '
-               '-a2t {input.acc2tax} '
+               '-a2t {input.acc2taxa} '
                '-o {output.taxa} '
         )
         shell(cmd)

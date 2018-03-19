@@ -49,7 +49,7 @@ config = {
         }
     },
     'quantify_taxa_megan': {
-        'acc2tax': pmegaDB('megan.acc2tax.0'),
+        'acc2taxa': pmegaDB('megan.acc2taxa.0'),
         'blast2lca': pmegaDB('megan.blast2lca.0'),
         'time': 10,
         'ram': 10

@@ -24,11 +24,11 @@ class MeganRecipe(BaseRecipe):
         }
 
     def makeRecipe(self):
-        self.fasta.resolve()
+        self.acc2taxa.resolve()
         self.repo.saveFiles(self,
                             'acc2taxa',
                             self.acc2taxa.filepath())
-        self.dmnd.resolve()
+        self.blast2lca.resolve()
         self.repo.saveFiles(self,
                             'blast2lca',
                             self.blast2lca.filepath())
