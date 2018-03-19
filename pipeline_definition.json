@@ -1,5 +1,5 @@
 {
-  "NAME": "metasub_cap",
+  "NAME": "panomic_pipeline",
   "VERSION": "0.0.1",
   "SNAKEMAKE": {
     "DIR": "snakemake_files",
